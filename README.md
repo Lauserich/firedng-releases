@@ -20,5 +20,12 @@ Entfernen:
 curl -fsSL https://raw.githubusercontent.com/Lauserich/firedng-releases/main/install.sh | bash -s -- --uninstall
 ```
 
+Findet der Installer einen anderen CinemaDNG-Importer (z. B. OCTOPUS RAW Studio), fragt er, ob er ihn
+deaktivieren soll – er wird dann nur beiseitegelegt, nicht gelöscht. Nur diese Prüfung:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Lauserich/firedng-releases/main/install.sh | bash -s -- --check-importers
+```
+
 Der Installer prüft die Signatur der Versionsinformation und die Prüfsumme des Pakets, bevor er
 installiert. Installierte Plugins suchen selbst nach Updates (Source Settings → „Nach Updates suchen“).
